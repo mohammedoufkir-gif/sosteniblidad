@@ -1,1 +1,226 @@
-# sosteniblidad
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Server Cloud | Institut de l'Ebre</title>
+    <style>
+        /* CSS UNIFICAT */
+        :root {
+            --color-primari: #2d5a27; /* Verd per a l'economia verda */
+            --color-secundari: #333;
+            --color-fons: #f4f4f4;
+            --color-text: #333;
+            --color-blanc: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--color-text);
+            background-color: var(--color-blanc);
+        }
+
+        /* Capçalera i Navegació */
+        header {
+            background-color: var(--color-primari);
+            color: var(--color-blanc);
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: var(--color-secundari);
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: var(--color-blanc);
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #45a049;
+        }
+
+        /* Contingut Principal */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            color: var(--color-primari);
+            border-bottom: 2px solid var(--color-primari);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Imatges i Diagrames */
+        .contenedor-imagen {
+            text-align: center;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .peu-imagen {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        /* Targetes (Grid) */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--color-fons);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid var(--color-primari);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--color-primari);
+        }
+
+        /* Peu de pàgina */
+        footer {
+            background-color: #eee;
+            color: #555;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p {
+            margin: 0.3rem 0;
+        }
+
+        /* Responsivitat */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            nav a { padding: 0.8rem 1rem; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ECO-SERVER CLOUD</h1>
+        <p>Sostenibilitat TIC per a l'Economia Circular</p>
+    </header>
+
+    <nav>
+        <a href="#producte">El Producte</a>
+        <a href="#beneficis">Beneficis Ambientals</a>
+        <a href="#tecnologia">Tecnologia</a>
+        <a href="#avaluacio">Avaluació</a>
+    </nav>
+
+    <main>
+        <section id="producte">
+            <h2>Reutilització Intel·ligent de Servidors</h2>
+            <p><strong>Eco-Server Cloud</strong> és una plataforma de virtualització basada en servidors d'alt rendiment que han estat recondicionats[cite: 14]. Donem una segona vida al maquinari de centres de dades, reduint així els residus electrònics i optimitzant l'ús de recursos energètics[cite: 12].</p>
+            
+            <div class="contenedor-imagen">
+                <img src="servidor.jpg" alt="Exemple d'un servidor físic recondicionat en un rack">
+                <div class="peu-imagen">Imatge de referència 1: Servidor certificat per a la seva reutilització.</div>
+            </div>
+            <p>Aquesta solució és ideal per a PIMES i institucions que busquen infraestructures TIC robustes i responsables amb el medi ambient[cite: 24].</p>
+        </section>
+
+        <section id="beneficis">
+            <h2>Impacte Positiu i Sostenible</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Reducció de Residus RAEE</h3>
+                    <p>Allarguem la vida útil dels equips (de 4 a 8 anys), disminuint dràsticament la quantitat de residus electrònics generats[cite: 23].</p>
+                </div>
+                <div class="card">
+                    <h3>Eficiència Energètica</h3>
+                    <p>Utilitzem programari de virtualització d'última generació que optimitza l'ús del maquinari, reduint el consum elèctric global del sistema[cite: 14, 22].</p>
+                </div>
+                <div class="card">
+                    <h3>Economia Circular Aplicada</h3>
+                    <p>Substituïm el model de "comprar-usar-llençar" per un model de recondicionament, reutilització i manteniment eficient[cite: 7, 20].</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnologia">
+            <h2>Tecnologia per a un Futur Verd</h2>
+            <p>La nostra arquitectura combina el millor del maquinari recondicionat amb solucions de programari de codi obert per garantir durabilitat i escalabilitat.</p>
+            
+            <div class="contenedor-imagen">
+                <img src="diagrama_tic.png" alt="Diagrama de l'arquitectura: Servidor Físic, Hipervisor, Màquines Virtuals y Clients">
+                <div class="peu-imagen">Imatge de referència 2: Diagrama de components TIC y la seva relació.</div>
+            </div>
+            
+            <p>Implementem un <b>Hipervisor (com Proxmox)</b> sobre servidors físics recondicionats per gestionar múltiples <b>Màquines Virtuals i Contenidors</b> de manera eficient, oferint serveis de núvol privat o web a baix cost.</p>
+        </section>
+
+        <section id="avaluacio">
+            <h2>Avaluació i Revisió Contínua</h2>
+            <p>Per assegurar l'èxit del producte i la millora contínua, mesurem els següents indicadors clau (KPIs):</p>
+            <ul>
+                <li><strong>Quilos de RAEE estalviats:</strong> Pes total de maquinari que s'ha mantingut operatiu en lloc de ser rebutjat.</li>
+                <li><strong>Consum energètic per servei:</strong> KWh consumits per unitat d'ús de servidor físic.</li>
+                <li><strong>Vida útil del maquinari:</strong> Mitjana d'anys que els equips recondicionats funcionen amb èxit.</li>
+                <li><strong>Enquestes de satisfacció del client:</strong> Sobre el rendiment i la claredat del benefici ambiental.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mòdul 1708: Sostenibilitat Aplicada al Sistema Productiu[cite: 5].</p>
+        <p>Projecte individual per l'Institut de l'Ebre - Tortosa[cite: 9, 29].</p>
+        <p>Professor: Daniel García[cite: 27].</p>
+    </footer>
+</body>
+</html>
